@@ -18,7 +18,7 @@ function getMemorableCombo() {
 	console.log("*** digits of '%s': %s\n", word, code);
 	console.log("\nCombination: %s; mnemonic '%s'\n", code, word);
 
-  return code + " (" + code_sorted + "); mnemonic: " + word;
+  return "'" + word + "': " + code + " or " + code_sorted;
 }
 </script>
 
@@ -26,7 +26,7 @@ function getMemorableCombo() {
 
 <button
   type="button"
-  onclick='document.getElementById("theButton").innerHTML = "Combo: " + getMemorableCombo()'>
+  onclick='document.getElementById("theButton").innerHTML = getMemorableCombo()'>
   Generate
 </button>
 
