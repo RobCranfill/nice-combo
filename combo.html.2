@@ -3,7 +3,7 @@
 // return a random word/code pair from the dictionary
 function randomPair() {
 	return goodPairs_[Math.floor(Math.random() * goodPairs_.length)];
-}
+	}
 
 /**
 Nothing much to do anymore except pick a random pair!
@@ -11,15 +11,15 @@ Nothing much to do anymore except pick a random pair!
 function getMemorableCombo() {
 
 	wordPair = randomPair();
-  word = wordPair[0];
-  code = wordPair[1];
-  code_sorted = code.split('').sort().join('');
+	word = wordPair[0];
+	code = wordPair[1];
+	code_sorted = code.split('').sort().join('');
 
 	console.log("*** digits of '%s': %s\n", word, code);
 	console.log("\nCombination: %s; mnemonic '%s'\n", code, word);
 
-  return "'" + word + "': " + code + " or " + code_sorted;
-}
+	return "'" + word + "': " + code + " or " + code_sorted;
+	}
 </script>
 
 <p id="theButton">Click for a memorable combo!</p>

@@ -7,7 +7,7 @@ We use a telephone keypad as the way to map numbers to letters. One disadvantage
 
 The important thing to note about these lock-boxes is that the combination is *not* order-dependent; that is, "123" is the same as "321" and "312" and all other permutations of those three digits. :-/ And repeats don't matter, either, so "12131213111" is effectively the same as that simple three-digit combo.
 
-The upshot of all this is there are only a few hundred combination of 4-6 digits, making a brute-force attack more feasible; but that's still hundreds of tries, and I think any Bad Guy would give up before then.
+The upshot of all this is there are only a few hundred "good" combinations of 4-6 digits, making a brute-force attack more feasible; but that's still hundreds of tries, and I think any Bad Guy would give up before then.
 
 
 If all goes as planned, you can run this code here:
