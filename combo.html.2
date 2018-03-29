@@ -15,18 +15,18 @@ function getMemorableCombo() {
 	code = wordPair[1];
 	code_sorted = code.split('').sort().join('');
 
-	console.log("*** digits of '%s': %s\n", word, code);
-	console.log("\nCombination: %s; mnemonic '%s'\n", code, word);
+//	console.log("*** digits of '%s': %s\n", word, code);
+	console.log("Combination: %s; mnemonic '%s'\n", code, word);
 
 	return "'" + word + "': " + code + " or " + code_sorted;
 	}
 </script>
 
-<p id="theButton">Click for a memorable combo!</p>
+<p id="paraText">Click for a memorable combo!</p>
 
 <button
   type="button"
-  onclick='document.getElementById("theButton").innerHTML = getMemorableCombo()'>
+  onclick='document.getElementById("paraText").innerHTML += "<br><tt>" + getMemorableCombo() + "</tt>"'>
   Generate
 </button>
 
